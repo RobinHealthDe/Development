@@ -4,7 +4,7 @@
 This is the Robin Health Repository for **production purposes**. 
 - All features should be developed in dedicated feature branches. 
 - Upon completion, make sure all tests are still green and do a pull request. 
-- The master is always automatically deployed to Heroku.
+- The master is always automatically deployed to Heroku under `https://robinhealthproduction.herokuapp.com/`
 
 ##Commit messages
 Commit messages should look as followed `@github_username STORYNUMBER Commit message`

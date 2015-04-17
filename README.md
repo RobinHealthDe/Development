@@ -1,7 +1,7 @@
-# Robin Health PRODUCTION
+# Robin Health DEVELOPMENT
 
 ## Information and general workflow
-This is the Robin Health Repository for **production purposes**. 
+This is the Robin Health Repository for **development purposes**. 
 - All features should be developed in dedicated feature branches. 
 - Upon completion, make sure all tests are still green and do a pull request. 
 - The master is always automatically deployed to Heroku under `https://robinhealthproduction.herokuapp.com/`

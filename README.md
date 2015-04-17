@@ -21,13 +21,13 @@ The Rails Version was fixed to `4.2.0`
 Bootstrap has already been included and can be found in the asset pipeline
 
 ##Initial install
-Make sure the fixed Ruby as well as Rails versions are installed. For Ruby versioning I recommend using rbenv.
-1. Clone repository
-2. cd into root
-3. Run `gem install bundler`
-4. Run `bundle install`
-5. Run `rake db:create`
-6. Run `rake db:migrate`
+- Make sure the fixed Ruby as well as Rails versions are installed. For Ruby versioning I recommend using rbenv.
+- Clone repository
+- cd into root
+- Run `gem install bundler`
+- Run `bundle install`
+- Run `rake db:create`
+- Run `rake db:migrate`
 
 ##Run server
 `rails s`

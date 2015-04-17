@@ -31,7 +31,7 @@ Bootstrap has already been included and can be found in the asset pipeline
 
 ##Run server
 `rails s`
-Runs on localhost:3000
+Runs on `localhost:3000`. A initial route for root and dummy page has been created and can be found under `main#home`
 
 ##Run tests
 `rspec`

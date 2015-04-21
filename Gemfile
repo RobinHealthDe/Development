@@ -25,6 +25,7 @@ group :development, :test do
   gem 'shoulda'
   gem 'spring'
   gem 'web-console', '~> 2.0'
+  gem 'rubocop'
 end
 
 # BOOTSTRAP

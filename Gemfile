@@ -33,3 +33,5 @@ gem 'bootstrap_form'
 # HEROKU
 gem 'rails_12factor', group: :production
 gem 'puma'
+
+gem 'slim', '~> 3.0'

@@ -19,6 +19,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
+gem 'activeadmin', '~> 1.0.0.pre1'
 
 group :development, :test do
   gem 'byebug'

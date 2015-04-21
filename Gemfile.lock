@@ -181,6 +181,9 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
+    schema_plus (1.8.8)
+      activerecord (>= 3.2, <= 4.2.0)
+      valuable
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -215,6 +218,7 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    valuable (0.9.9)
     web-console (2.1.2)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -241,6 +245,7 @@ DEPENDENCIES
   rails_12factor
   rspec-rails (~> 3.0)
   sass-rails (~> 5.0)
+  schema_plus
   sdoc (~> 0.4.0)
   shoulda
   slim (~> 3.0)

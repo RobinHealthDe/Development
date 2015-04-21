@@ -76,4 +76,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Set up basic http authentication
+  config.middleware.insert_after(::Rack::Lock, "::Rack::Auth::Basic", "Enter password") do |u, p|
+    [u, p] == ["rbenning@arzthelden.de", "Test#1Test#1"]
+  end
 end

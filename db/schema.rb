@@ -31,6 +31,34 @@ ActiveRecord::Schema.define(version: 20150421161922) do
     t.index ["resource_type", "resource_id"], :name => "index_active_admin_comments_on_resource_type_and_resource_id"
   end
 
+  create_table "contact_infos", force: :cascade do |t|
+    t.string   "first_name", limit: 64,  null: false
+    t.string   "last_name",  limit: 64,  null: false
+    t.string   "email",      limit: 254, null: false
+    t.string   "phone",      limit: 15
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.index ["email"], :name => "index_contact_infos_on_email", :unique => true
+  end
+
+  create_table "patients", force: :cascade do |t|
+    t.integer  "contact_info_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["contact_info_id"], :name => "fk__patients_contact_info_id"
+    t.index ["contact_info_id"], :name => "index_patients_on_contact_info_id", :unique => true
+    t.foreign_key ["contact_info_id"], "contact_infos", ["id"], :on_update => :no_action, :on_delete => :no_action, :name => "fk_patients_contact_info_id"
+  end
+
+  create_table "inquiries", force: :cascade do |t|
+    t.integer  "patient_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["patient_id"], :name => "fk__inquiries_patient_id"
+    t.index ["patient_id"], :name => "index_inquiries_on_patient_id", :unique => true
+    t.foreign_key ["patient_id"], "patients", ["id"], :on_update => :no_action, :on_delete => :no_action, :name => "fk_inquiries_patient_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  limit: 254,             null: false
     t.string   "encrypted_password",                             null: false

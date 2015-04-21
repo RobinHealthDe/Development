@@ -16,6 +16,7 @@ This is the Robin Health Repository for **development purposes**.
 - Capitalized, short summary + more detailed description in next paragraphs if necessary.
 - Written in imperative: "Fix bug" and not "Fixed bug".
 - Merge commits should include STORYNUMBER before the text message.
+- If a commit adds or modifies migrations, add [M] at the beginning of the message
 
 ## Dependencies and Versions
 ### Ruby

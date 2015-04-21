@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Fixed Ruby Version
-ruby '2.2.0'
+ruby '2.2.2'
 
 # Fixed Rails Version
 gem 'rails', '4.2.0'

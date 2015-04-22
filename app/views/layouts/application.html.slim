@@ -12,4 +12,10 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': true, defer: true
 
   body
-    = yield
+    header
+
+    main
+      .container
+        = yield
+
+    footer

@@ -78,3 +78,26 @@
             ' für Sie zu finden: Jeder Zahnarzt durchläuft daher unseren Zahnarzt-Experten-check. Vereinbaren Sie jetzt Ihren
             strong Wunschtermin
             | .
+
+  section#testimonials
+    #testimonial-carousel.carousel.slide
+      ol.carousel-indicators
+        li.active data-target="#testimonial-carousel" data-slide-to="0"
+        li data-target="#testimonial-carousel" data-slide-to="1"
+        li data-target="#testimonial-carousel" data-slide-to="2"
+
+      .carousel-inner role="listbox"
+        .item.active
+          = image_tag("image_testimonial.png")
+        .item
+          = image_tag("image_testimonial.png")
+        .item
+          = image_tag("image_testimonial.png")
+
+      a.left.carousel-control href="#testimonial-carousel" role="button" data-slide="prev"
+        span.glyphicon.glyphicon-chevron-left aria-hidden="true"
+        span.sr-only Previous
+
+      a.right.carousel-control href="#testimonial-carousel" role="button" data-slide="next"
+        span.glyphicon.glyphicon-chevron-right aria-hidden="true"
+        span.sr-only Next

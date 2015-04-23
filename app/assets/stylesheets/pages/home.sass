@@ -47,6 +47,30 @@
       .btn-primary
         width: 100%
 
+  #benefits
+    background: $blue
+    color:      $white
+
+    h2
+      font-weight: bold
+      color:       $blue
+      text-align:  center
+      line-height: 1.5
+      width:       7em
+      margin:      0 auto 1em
+      background:  $white
+
+    ul
+      padding: 0
+      +columns(2)
+
+      li
+        list-style:      none
+        min-height:      3em
+        padding:         .5em 0 0 3em
+        background:      image-url('icons/bulletpoint.png') no-repeat left top
+        background-size: 2.5em
+
   #testimonials
     .carousel .item
       background: $green

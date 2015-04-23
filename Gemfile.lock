@@ -181,9 +181,13 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
+    schema_associations (1.2.2)
+      schema_plus (>= 1.2.0)
     schema_plus (1.8.8)
       activerecord (>= 3.2, <= 4.2.0)
       valuable
+    schema_validations (1.1.0)
+      schema_plus
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -245,7 +249,9 @@ DEPENDENCIES
   rails_12factor
   rspec-rails (~> 3.0)
   sass-rails (~> 5.0)
+  schema_associations
   schema_plus
+  schema_validations
   sdoc (~> 0.4.0)
   shoulda
   slim (~> 3.0)

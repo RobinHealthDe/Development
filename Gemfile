@@ -8,6 +8,8 @@ gem 'rails', '4.2.0'
 
 gem 'pg'
 gem 'schema_plus'
+gem 'schema_validations'
+gem 'schema_associations'
 gem 'sass-rails', '~> 5.0'
 gem 'compass-rails', '~> 2.0.2'
 gem 'uglifier', '>= 1.3.0'

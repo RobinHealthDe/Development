@@ -54,9 +54,10 @@
 
   section#steps
     .row
-      .col-md-10.col-md-offset-1
+      .col-md-8.col-md-offset-2
         .col-md-4
-          = image_tag("step_1.png")
+          .icon.next-step
+          .step-image.step1
           h2
             strong> Alternativangebote
             | einholen
@@ -66,7 +67,8 @@
             | für Sie.
 
         .col-md-4
-          = image_tag("step_2.png")
+          .icon.next-step
+          .step-image.step2
           h2
             strong> Wunschzahnarzt
             | auswählen
@@ -78,11 +80,18 @@
             | aus denen Sie Ihren Wunsch-zahnarzt auswählen können. Bei der Auswahl steht Ihnen unser Team jederzeit zur Seite.
 
         .col-md-4
-          = image_tag("step_3.png")
+          ul.minor-list
+            li
+              p.note 2 Jahre Gewährleistung
+
+            li
+              p.note Garantiert deutscher Zahnersatz
+
+          .step-image.step3
           h2
             ' Von
-            strong> vertrauensvollen Händen behandeln lassen
-            | einholen
+            strong> vertrauensvollen Händen
+            | behandeln lassen
           p
             ' Unser Anliegen ist es, den
             strong> passenden Spezialisten

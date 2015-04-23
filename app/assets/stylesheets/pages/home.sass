@@ -71,6 +71,55 @@
         background:      image-url('icons/bulletpoint.png') no-repeat left top
         background-size: 2.5em
 
+  #steps
+    padding: 3em 0 3em
+
+    h2
+      text-align: center
+      min-height: 4.5em
+      margin:     0
+
+    .step-image
+      width:           12em
+      height:          12em
+      margin:          0 auto
+      background:      no-repeat center
+      background-size: 90%
+
+      &.step1
+        background-image: image-url('step_1.png')
+
+      &.step2
+        background-image: image-url('step_2.png')
+
+      &.step3
+        background-image: image-url('step_3.png')
+
+    .next-step
+      float:      right
+      margin-top: 4em
+      position:   relative
+      left:       2em
+
+    ul.minor-list
+      padding:  0
+      margin:   0
+      position: absolute
+      top:      3em
+      left:     15em
+      width:    12em
+
+      li
+        list-style:      none
+        min-height:      3em
+        padding:         .5em 0 0 2em
+        background:      image-url('icons/check.png') no-repeat left top
+        background-size: 1.5em
+
+        p.note
+          color:  $green
+          margin: 0
+
   #testimonials
     .carousel .item
       background: $green

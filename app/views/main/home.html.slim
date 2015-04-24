@@ -110,20 +110,11 @@
 
           .carousel-inner role="listbox"
             .item.active
-              .quote-container
-                = image_tag("testimonial.png", class: 'person-image')
-                p.quote Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                p.caption Erika Mustermann
+              = render(partial: "quote", locals: { image_link: "testimonial.png", quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", caption: "Erika Mustermann" })
             .item
-              .quote-container
-                = image_tag("robert.png", class: 'person-image')
-                p.quote Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                p.caption Robert Benning
+              = render(partial: "quote", locals: { image_link: "robert.png", quote: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", caption: "Robert Benning" })
             .item
-              .quote-container
-                = image_tag("testimonial.png", class: 'person-image')
-                p.quote Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-                p.caption Erika Mustermann
+              = render(partial: "quote", locals: { image_link: "testimonial.png", quote: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.", caption: "Erika Mustermann" })
 
           a.left.carousel-control href="#testimonial-carousel" role="button" data-slide="prev"
             .icon.slider-left

@@ -113,17 +113,17 @@
               .quote-container
                 = image_tag("testimonial.png", class: 'person-image')
                 p.quote Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                p.signature Erika Mustermann
+                p.caption Erika Mustermann
             .item
               .quote-container
                 = image_tag("robert.png", class: 'person-image')
                 p.quote Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                p.signature Robert Benning
+                p.caption Robert Benning
             .item
               .quote-container
                 = image_tag("testimonial.png", class: 'person-image')
                 p.quote Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-                p.signature Erika Mustermann
+                p.caption Erika Mustermann
 
           a.left.carousel-control href="#testimonial-carousel" role="button" data-slide="prev"
             .icon.slider-left
@@ -132,10 +132,16 @@
             .icon.slider-right
 
   section#contact
-    h3 Haben Sie Fragen?
-    p
-      ' Unser Zahnärzte-Team berät Sie gerne persönlich.
-      strong Unsere Hotline
-      | :
-    h1
-      a href="tel:030323323323" 030 323 323 323
+    .row
+      .col-md-5.col-md-offset-2
+        h3 Haben Sie Fragen?
+        p
+          ' Unser Zahnärzte-Team berät Sie gerne persönlich.
+          strong Unsere Hotline
+          | :
+        h1
+          a href="tel:030323323323" 030 323 323 323
+
+      .col-md-3
+        = image_tag('robert.png', class: 'person-image')
+        p.caption Robert Benning, Zahnarzt

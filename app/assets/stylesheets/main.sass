@@ -22,3 +22,43 @@ input.form-control
   color:       $dark-gray
   font-size:   .9em
   line-height: 1.3
+
+.carousel
+  .item
+    padding: 1em 80px
+
+  .carousel-indicators
+    margin-bottom: 0
+    bottom:        .5em
+
+    li
+      margin-right: 10px
+      background:   white
+      opacity:      .5
+      width:        13px
+      height:       13px
+
+      &.active
+        opacity: 1
+
+  .carousel-control
+    background: none
+    opacity:    .7
+
+    &:hover
+      opacity: 1
+
+    .slider-left, .slider-right
+      position:   absolute
+      top:        50%
+      margin-top: -34px
+
+    .slider-left
+      left: 0
+
+    .slider-right
+      right: 0
+
+.testimonial-image
+  width:  216px
+  height: 216px

@@ -59,6 +59,36 @@ input.form-control
     .slider-right
       right: 0
 
-.testimonial-image
+.person-image
   width:  216px
   height: 216px
+
+.quote-container
+  color: $white
+  +clearfix
+
+  .person-image
+    float: left
+
+  p.quote
+    font-weight: bold
+    font-size:   1.3em
+    margin:      1em 1em 0
+    position:    relative
+    left:        1em
+
+    &:before, &:after
+      display:     block
+      font-size:   3em
+      line-height: 1
+      height:      .5em
+      content:     '"'
+      font-weight: normal
+
+    &:after
+      text-align: right
+
+  p.signature
+    font-size: 0.9em
+    position:  relative
+    left:      1.4em

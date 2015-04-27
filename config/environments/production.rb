@@ -79,6 +79,6 @@ Rails.application.configure do
 
   # Set up basic http authentication
   config.middleware.use('::Rack::Auth::Basic') do |u, p|
-    [u, p] == ["rbenning@arzthelden.de", "Test#1Test#1"]
+    [u, p] == ["rbenning@arzthelden.de", "a2014*h3ld"]
   end
 end

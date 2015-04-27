@@ -1,1 +1,140 @@
-h1 Landing Page to be rendered here!
+.page#home
+  section#registration
+    .row
+      .col-md-4.col-md-offset-6
+        a href="https://ergodirekt.de/de.html"
+          .logo.ergo-direct
+        p.note.ergo-direct Ein exklusives Angebot für die Versicherten der
+
+        form#registration-form
+          h1 Finden Sie jetzt Ihren fairen Zahnarzt!
+          p Bezahlbare und individuell ausgewählte Spezialisten für Ihre Behandlung.
+          .form-group
+            input.form-control type="text" name="first-name" placeholder="Vorname"
+          .form-group
+            input.form-control type="text" name="last-name" placeholder="Nachname"
+          .form-group
+            input.form-control type="email" name="email" placeholder="E-Mail"
+          .form-group
+            input.form-control type="tel" name="phone-number" placeholder="Telefon"
+          .checkbox
+            label for="privacy"
+              input#privacy type="checkbox" Datenschutzerklärung
+
+            label for="agb"
+              input#agb type="checkbox" AGB
+
+          input.btn.btn-primary type="submit" value="Los geht's!"
+          .logo.tuev
+          p.note.tuev TÜV geprüfte Datensicherheit
+
+  section#benefits
+    .row
+      .col-md-8.col-md-offset-2
+        h2 Ihre Vorteile
+
+        ul
+          li
+            p
+              strong> Faire Alternatiangebote
+              | durch Zahnarzt-Expertencheck
+
+          li
+            p
+              strong> Kompetente & vertrauensvolle
+              | Zahnärzte, persönlich geprüft von Zahnärzten
+
+          li
+            p
+              strong> Alternativangebote
+              | nach 3 Tagen & Termine innerhalb einer Woche
+
+          li
+            p
+              strong> Unverbindlich & kostenlos
+
+  section#steps
+    .row
+      .col-md-8.col-md-offset-2
+        .col-md-4
+          .icon.next-step
+          .step-image.step1
+          h2
+            strong> Alternativangebote
+            | einholen
+          p
+            ' Unsere Experten wissen, was gute Leistung kostet: Wir überprüfen Ihren Heil- & Kostenplan und machen uns auf die Suche nach den
+            strong> passenden Spezialisten
+            | für Sie.
+
+        .col-md-4
+          .icon.next-step
+          .step-image.step2
+          h2
+            strong> Wunschzahnarzt
+            | auswählen
+          p
+            ' Nach
+            strong> 3 Tagen
+            ' erhalten Sie
+            strong> 3 Alternativangebote
+            | aus denen Sie Ihren Wunsch-zahnarzt auswählen können. Bei der Auswahl steht Ihnen unser Team jederzeit zur Seite.
+
+        .col-md-4
+          ul.minor-list
+            li
+              p.note 2 Jahre Gewährleistung
+
+            li
+              p.note Garantiert deutscher Zahnersatz
+
+          .step-image.step3
+          h2
+            ' Von
+            strong> vertrauensvollen Händen
+            | behandeln lassen
+          p
+            ' Unser Anliegen ist es, den
+            strong> passenden Spezialisten
+            ' für Sie zu finden: Jeder Zahnarzt durchläuft daher unseren Zahnarzt-Experten-check. Vereinbaren Sie jetzt Ihren
+            strong Wunschtermin
+            | .
+
+  section#testimonials
+    .row
+      .col-md-8.col-md-offset-2
+        #testimonial-carousel.carousel.slide
+          ol.carousel-indicators
+            li.active data-target="#testimonial-carousel" data-slide-to="0"
+            li data-target="#testimonial-carousel" data-slide-to="1"
+            li data-target="#testimonial-carousel" data-slide-to="2"
+
+          .carousel-inner role="listbox"
+            .item.active
+              = render(partial: "quote", locals: { image_link: "testimonial.png", quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", caption: "Erika Mustermann" })
+            .item
+              = render(partial: "quote", locals: { image_link: "robert.png", quote: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", caption: "Robert Benning" })
+            .item
+              = render(partial: "quote", locals: { image_link: "testimonial.png", quote: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.", caption: "Erika Mustermann" })
+
+          a.left.carousel-control href="#testimonial-carousel" role="button" data-slide="prev"
+            .icon.slider-left
+
+          a.right.carousel-control href="#testimonial-carousel" role="button" data-slide="next"
+            .icon.slider-right
+
+  section#contact
+    .row
+      .col-md-5.col-md-offset-2
+        h3 Haben Sie Fragen?
+        p
+          ' Unser Zahnärzte-Team berät Sie gerne persönlich.
+          strong Unsere Hotline
+          | :
+        .icon.phone-big
+        p.phone-number
+          a href="tel:030323323323" 030 323 323 323
+
+      .col-md-3
+        = image_tag('robert.png', class: 'person-image')
+        p.caption Robert Benning, Zahnarzt

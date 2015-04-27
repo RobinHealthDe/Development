@@ -13,9 +13,11 @@ html
 
   body
     header
+      = render("layouts/header")
 
     main
       .container
         = yield
 
     footer
+      = render("layouts/footer")

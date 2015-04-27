@@ -1,0 +1,156 @@
+#home
+  #registration
+    +background(image-url("registration_background.jpg"), $blue)
+    background-repeat: no-repeat
+    background-size:   100%
+
+    .ergo-direct
+      &.logo
+        width:        33%
+        float:        right
+        margin-right: 2.5em
+
+      &.note
+        margin-left: 4em
+        margin-top:  .8em
+
+    .tuev
+      &.logo
+        float:        left
+        width:        45px
+        margin-left:  1.3em
+        margin-right: .5em
+
+      &.note
+        margin-top: 1.2em
+        color:      $blue
+
+    form
+      background: rgba(white, .5)
+      padding:    1.3em 1em .6em
+      margin:     0 1.5em 3em 2.5em
+      color:      $blue
+      +border-radius(1em)
+
+      h1
+        margin-top: 0
+
+      label
+        font-size:   .9em
+        margin-left: 2em
+
+        input[type=checkbox]
+          margin-top: .2em
+
+      .btn-primary
+        width: 100%
+
+  #benefits
+    background: $blue
+    color:      $white
+
+    h2
+      font-weight: bold
+      color:       $blue
+      text-align:  center
+      line-height: 1.5
+      width:       7em
+      margin:      0 auto 1em
+      background:  $white
+
+    ul
+      padding: 0
+      +columns(2)
+
+      li
+        list-style:      none
+        min-height:      3em
+        padding:         .5em 0 0 3em
+        background:      image-url('icons/bulletpoint.png') no-repeat left top
+        background-size: 2.5em
+
+  #steps
+    padding: 3em 0 3em
+
+    h2
+      text-align: center
+      min-height: 4.5em
+      margin:     0
+
+    .step-image
+      width:           12em
+      height:          12em
+      margin:          0 auto
+      background:      no-repeat center
+      background-size: 90%
+
+      &.step1
+        background-image: image-url('step_1.png')
+
+      &.step2
+        background-image: image-url('step_2.png')
+
+      &.step3
+        background-image: image-url('step_3.png')
+
+    .next-step
+      float:      right
+      margin-top: 4em
+      position:   relative
+      left:       2em
+
+    ul.minor-list
+      padding:  0
+      margin:   0
+      position: absolute
+      top:      3em
+      left:     15em
+      width:    12em
+
+      li
+        list-style:      none
+        min-height:      3em
+        padding:         .5em 0 0 2em
+        background:      image-url('icons/check.png') no-repeat left top
+        background-size: 1.5em
+
+        p.note
+          color:  $green
+          margin: 0
+
+  #testimonials
+    background:     $green
+    padding-bottom: .5em
+
+  #contact
+    padding:    1em 0
+    background: $blue
+    color:      $white
+
+    h3
+      color:      $white
+      margin-top: 2em
+
+    a
+      color: $white
+
+    .person-image
+      margin: 0 0 1em auto
+
+    .caption
+      // width must be the same as person image width
+      width:        216px
+      margin-right: 0
+      margin-left:  auto
+      text-align:   center
+
+    .icon.phone-big
+      float:        left
+      margin-right: 1em
+
+    .phone-number
+      font-size:   3em
+      line-height: 1.7
+
+    h3 + p
+      margin-bottom: 2em
